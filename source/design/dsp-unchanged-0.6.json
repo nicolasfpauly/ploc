@@ -1,0 +1,18 @@
+{
+  "sampleEquivalentSource": true,
+  "protectedFiles": {
+    "plugins/ploc/ploc_tables.h": "f9b87ab638ee84f0d770342e6a99ac68e75ef616eda33f4b191a46485d4cb058",
+    "plugins/ploc/ploc_legacy_dsp.h": "fb821cbe20267080da2b97c926531ddb24de7b449eb79bd3b37056e9cfef42c7",
+    "plugins/ploc/ploc3_tables.h": "61817588a17dc16448d8a75844ce9d18c63602b6c17c1cfc3c5c3b38856e0b32",
+    "plugins/ploc/ploc.c": "71726ddb52effbbd89c4c4fbab1bfebc80c10196eec01f44760fd12863e6ec74",
+    "plugins/ploc/presets4.py": "a9e6701e61aff5ff7a21c95835ce96febd655e391ce7ab3f257b627498233607",
+    "plugins/ploc/ploc4_dsp.h": "630739b7a60b83bd65d6de998b17499d69844db5d3350d6f819a8d42ed334f18",
+    "plugins/ploc/ploc_params.h": "e361af06b17f90a945f00b00e4f64ae445877b85563db09439fb6e49b57c9e04",
+    "plugins/ploc/ploc4_params.h": "48832565bff5a51b7b7feab739ba5b171e9fcd86b003e073287fa3dadda2d125",
+    "plugins/ploc/ploc5_surface.h": "d56191974869da1229f9952f64095ffc5c45b20cd6fde246c5edbffef08d6690",
+    "plugins/ploc/ploc_dsp.h": "218907acca1cede6037422b39232a808eb4492b02e04b4322c3df5ea3809a4cb",
+    "plugins/ploc/ploc3_dsp.h": "52d8615aebd79f987419c8e714ec7771d6bb987e171d8d2092885dd2b9043260"
+  },
+  "presetAbiUnchanged": true,
+  "noPresetBankGenerated": true
+}

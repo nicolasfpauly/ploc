@@ -1,0 +1,1 @@
+{"name":"plocctrl","kind":"feature","loadable":true,"symbol":"FEATURE_plocctrl","sources":["plocctrl.c"],"claims":["key:synth:ploc-editor"],"author":"Nicolas Franck Pauly","version":"0.6.1"}

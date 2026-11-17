@@ -1,0 +1,191 @@
+{
+  "sourceNode": "49:9400",
+  "nativeScale": 0.6584362139917695,
+  "originalAssetsUnmodified": true,
+  "sourcePlacements": [
+    {
+      "asset": "imgGroup124.svg",
+      "nodeId": "49:9483",
+      "nativeMatrix": [
+        0.6584362139917695,
+        0.0,
+        0.0,
+        0.6584362139917695,
+        88.88850952047969,
+        45.43209123022763
+      ],
+      "originalRootWidth": 72.2547,
+      "originalRootHeight": 56.0
+    },
+    {
+      "asset": "imgGroup95.svg",
+      "nodeId": "49:9425",
+      "nativeMatrix": [
+        0.6584362139917695,
+        0.0,
+        0.0,
+        0.6584362139917695,
+        93.81046079282407,
+        126.28966598347479
+      ],
+      "originalRootWidth": 200.551,
+      "originalRootHeight": 41.2227
+    },
+    {
+      "asset": "imgGroup109.svg",
+      "nodeId": "49:9423",
+      "nativeMatrix": [
+        -0.43150371975368923,
+        0.49733570083178613,
+        -0.49733570083178613,
+        -0.43150371975368923,
+        149.01912959723163,
+        102.13550266671375
+      ],
+      "originalRootWidth": 14.18,
+      "originalRootHeight": 19.1181
+    },
+    {
+      "asset": "imgGroup113.svg",
+      "nodeId": "49:9469",
+      "nativeMatrix": [
+        -0.3239317097291044,
+        0.573242093309944,
+        -0.573242093309944,
+        -0.3239317097291044,
+        133.1734225232662,
+        110.64555779746993
+      ],
+      "originalRootWidth": 14.18,
+      "originalRootHeight": 19.1181
+    },
+    {
+      "asset": "imgGroup112.svg",
+      "nodeId": "49:9467",
+      "nativeMatrix": [
+        -0.0973352287041307,
+        0.6512020252369068,
+        -0.6512020252369068,
+        -0.0973352287041307,
+        113.46971788717747,
+        117.42999334073714
+      ],
+      "originalRootWidth": 12.5313,
+      "originalRootHeight": 16.8009
+    },
+    {
+      "asset": "imgGroup111.svg",
+      "nodeId": "49:9477",
+      "nativeMatrix": [
+        -0.4655847431700907,
+        -0.465584703924234,
+        0.465584703924234,
+        -0.4655847431700907,
+        181.82870744640064,
+        111.68326250086562
+      ],
+      "originalRootWidth": 12.1152,
+      "originalRootHeight": 16.2161
+    },
+    {
+      "asset": "imgGroup110.svg",
+      "nodeId": "49:9471",
+      "nativeMatrix": [
+        -0.31599841490694525,
+        -0.5776532491048177,
+        0.5776532491048177,
+        -0.31599841490694525,
+        187.44798457845928,
+        124.96756918928133
+      ],
+      "originalRootWidth": 12.5924,
+      "originalRootHeight": 16.8867
+    },
+    {
+      "asset": "imgGroup114.svg",
+      "nodeId": "49:9473",
+      "nativeMatrix": [
+        -0.36593350853939605,
+        -0.5473855493490588,
+        0.5473855493490588,
+        -0.36593350853939605,
+        209.04567737715493,
+        120.07018231928099
+      ],
+      "originalRootWidth": 12.5924,
+      "originalRootHeight": 16.8867
+    },
+    {
+      "asset": "imgGroup115.svg",
+      "nodeId": "49:9475",
+      "nativeMatrix": [
+        -0.1495825999067644,
+        -0.6412201948126648,
+        0.6412201948126648,
+        -0.1495825999067644,
+        215.08451230234778,
+        132.27880412170632
+      ],
+      "originalRootWidth": 12.5924,
+      "originalRootHeight": 16.8867
+    },
+    {
+      "asset": "imgGroup108.svg",
+      "nodeId": "49:9431",
+      "nativeMatrix": [
+        0.6584362139917695,
+        0.0,
+        0.0,
+        0.6584362139917695,
+        143.07483324692967,
+        77.03703703703704
+      ],
+      "originalRootWidth": 51.4118,
+      "originalRootHeight": 72.0
+    },
+    {
+      "asset": "imgVector193.svg",
+      "nodeId": "49:9422",
+      "nativeMatrix": [
+        0.6584362139917695,
+        0.0,
+        0.0,
+        0.6584362139917695,
+        26.01916049382716,
+        59.81711934156379
+      ],
+      "originalRootWidth": 31.9668,
+      "originalRootHeight": 15.3055
+    },
+    {
+      "asset": "imgGroup117.svg",
+      "nodeId": "49:9490",
+      "nativeMatrix": [
+        0.6584362139917695,
+        0.0,
+        0.0,
+        0.6584362139917695,
+        88.88888888888889,
+        22.3868424589683
+      ],
+      "originalRootWidth": 73.0,
+      "originalRootHeight": 24.3333
+    }
+  ],
+  "svgBytes": 11298,
+  "elements": {
+    "svg": 1,
+    "g": 32,
+    "path": 66,
+    "circle": 2
+  },
+  "nodesWithIds": 56,
+  "dynamicColourPaints": 17,
+  "cleanPaints": 6,
+  "handlePoses": 12,
+  "retainedHandleContours": 6,
+  "rippleCenterY": 135,
+  "rippleDepthScale": 0.75,
+  "fontMode": "Native R246 Text objects for interactive labels and numbers; original Figma CLEAN and H2O artwork. No font file embedded.",
+  "textAssetSlots": "Original 45 placeholders and knob labels become parameter-driven native Text objects. User colour mapping overrides old label colours."
+}

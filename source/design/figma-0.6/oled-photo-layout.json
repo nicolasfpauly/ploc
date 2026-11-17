@@ -1,0 +1,20 @@
+{
+  "source": "Private photo of PLOC 0.6.1 on original OP-1, November 7, 2026. No photo included.",
+  "nativeUnits": [
+    320,
+    160
+  ],
+  "pixelsPerUnitEstimate": {
+    "x": 1.999,
+    "y": 1.955
+  },
+  "observedSprayDigitCapUnitsApprox": 55,
+  "oldNominalDigitSize": 51,
+  "visibleLowerEdgeApproxY": 149,
+  "digitSize": 32,
+  "qualitySize": 16,
+  "safeDigitLowerEdgeY": 146,
+  "ringCenterY": 135,
+  "ringDepthScale": 0.75,
+  "limitations": "Photo calibration and host callback bounds, not an OLED capture of 0.6.2."
+}

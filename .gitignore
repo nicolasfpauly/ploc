@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+source/output/
+source/.toolchain/
+source/sdk/
+local-release/
