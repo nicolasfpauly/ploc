@@ -4,7 +4,16 @@ PLOC is a water-inspired synth for the **original Teenage Engineering OP-1** run
 
 ![Rendered preview of the PLOC screen](docs/PLOC-0.6.2-OLED-preview.png)
 
-**0.6.2 is a preview release.** The workshop verified installation on an original OP-1 running Hundekraft 3.1.4 (R246). The image above is a render; the revised layout and graphics performance still need a check on the actual OLED. Other Hundekraft versions have not been tested. The OP-1 field is not supported.
+**0.6.2 was verified on Hundekraft 3.1.4.** The workshop verified installation on an original OP-1 running Hundekraft 3.1.4 (R246). The image above is a render; the revised layout and graphics performance still need a check on the actual OLED. Other Hundekraft versions have not been tested. The OP-1 field is not supported.
+
+## Downloads
+
+| Firmware on the original OP-1 | Build | Download |
+| --- | --- | --- |
+| **Hundekraft 3.3** | **PLOC 0.7.0-rc1** · one plugin file with all knob and Shift controls | [Install ZIP with 8 presets](./plugins/hundekraft-3.3/ploc-0.7.0-rc1-install.zip?raw=true) · [ploc.knl](./plugins/hundekraft-3.3/ploc.knl?raw=true) |
+| Hundekraft 3.1.4 | PLOC 0.6.2 · synth and companion controller | [Install ZIP with 8 presets](./plugins/ploc-0.6.2-install.zip?raw=true) |
+
+The 3.3 build passes host checks; hardware testing is pending. When upgrading PLOC on 3.3, replace the synth and remove the old PLOCCTRL entry if present. See the [changelog](CHANGELOG.md).
 
 ## Install
 

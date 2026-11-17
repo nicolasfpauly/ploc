@@ -1,4 +1,16 @@
-# Build PLOC 0.6.2
+# Build PLOC
+
+## 0.7.0-rc1 / Hundekraft 3.3
+
+Use the [Hundekraft 3.3 source SDK](https://hundekraft.github.io/op1-workshop/source/hundekraft-3.3-source.tar.gz) and a Blackfin ELF toolchain (GCC 13.3.0) on your PATH. From this directory:
+
+```sh
+PLOC_SDK_SOURCE=/absolute/path/to/hundekraft-3.3-source bash tools/build-standalone.sh
+```
+
+This builds only `output/hundekraft-3.3/ploc.knl`. The standalone manifest enables the engine input hook and reuses the original synth sources. The 3.1.4 build below still uses its original manifest and companion controller.
+
+## 0.6.2 / Hundekraft 3.1.4
 
 Start here to build the two plugin binaries for the original OP-1 with Hundekraft 3.1.4 (R246). Use the matching Hundekraft source SDK, including `ext/kennel`, and put a Blackfin ELF toolchain with `bfin-elf-gcc` on your PATH. The SDK's own README explains the packer requirements. Python 3 and Clang are used for the build and host checks. Neither the SDK, compiler nor OP-1 firmware is bundled here.
 

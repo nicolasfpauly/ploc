@@ -78,7 +78,11 @@ int main(int argc,char **argv){
  SCREEN_ploc.init(0);SCREEN_ploc.update(0,16);
  assert(constructors==N_TEXT&&!lookup("ploclegacy")->visible&&lookup("v6live")->visible);
  assert(!strcmp(strings[0],"flow")&&!strcmp(strings[1],"size")&&!strcmp(strings[2],"spray")&&!strcmp(strings[3],"ripple"));
+#ifdef PLOC_STANDALONE
+ assert(op1_eng_page[2]==0);  /* An old companion must not see the pairing token. */
+#else
  assert(op1_eng_page[2]==(PLOC6_TOKEN|39));
+#endif
  assert(text_color[0][2]==255&&text_color[1][1]==237&&text_color[2][0]==255&&text_color[3][1]==66);
  /* Photo at ~1.96 pixels per OLED unit: measured native label caps near
     their constructor size and the 51-unit digit strokes over 54 units tall.
@@ -134,6 +138,12 @@ int main(int argc,char **argv){
  op1_eng_page[0]=0x82;knobs[2]=32767;SCREEN_ploc.update(0,16);assert(quality_drawn&&!strcmp(strings[T_QUALITY],"quality")&&!strcmp(strings[5],"99"));
  op1_eng_page[0]=0x83;SCREEN_ploc.update(0,16);assert(!strcmp(strings[3],"impact"));
  op1_eng_page[0]=0x80;SCREEN_ploc.update(0,16);assert(!strcmp(strings[0],"flow"));
+#ifdef PLOC_STANDALONE
+ held=0;op1_eng_page[0]=0x83;op1_eng_page[2]=PLOC6_TOKEN|39;
+ SCREEN_ploc.update(0,16);
+ assert(!op1_eng_page[0]&&!op1_eng_page[2]&&!strcmp(strings[3],"ripple"));
+ held=1;SCREEN_ploc.update(0,16);assert(!strcmp(strings[3],"ripple"));
+#endif
  held=0;SCREEN_ploc.update(0,16);assert(!quality_drawn&&!strcmp(strings[1],"size")&&!strcmp(strings[2],"spray")&&!strcmp(strings[3],"ripple"));
  knobs[5]=3;SCREEN_ploc.update(0,16);assert(lookup("ploclegacy")->visible&&!lookup("v6live")->visible&&legacy_inits==1&&legacy_draws==1);
  ploc4_defaults(knobs);SCREEN_ploc.update(0,16);assert(!lookup("ploclegacy")->visible&&lookup("v6live")->visible);

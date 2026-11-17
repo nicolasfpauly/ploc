@@ -31,6 +31,13 @@ static void render(void *self,int16_t *out,const int16_t *p) {
    p5_surface_process(&surface[i],out,OP1_BLOCK,p[1],p[0]);
  }else ploc_model_process(&((ploc_voice*)self)->state,out,OP1_PITCH_INC,p,op1_voice_vel_gain(self),OP1_SINE_TABLE,OP1_BLOCK);
 }
-/* The companion maps physical turns to the canonical preset words,
- * and Shift turns to SPRAY / HEIGHT / TAIL / IMPACT. No page navigation. */
+#ifdef PLOC_STANDALONE
+extern int ploc_input(int page,int ev,int encoder,int delta);
+const op1_engine_ext2_t ENGINE_ploc={
+ .ext={.voice={note_on,render,note_off,{0,0,0,0}}},
+ .input=ploc_input
+};
+#else
+/* Keep the ordinary voice descriptor for the existing DSP host harness. */
 const op1_engine_t ENGINE_ploc={note_on,render,note_off,{0,0,0,0}};
+#endif

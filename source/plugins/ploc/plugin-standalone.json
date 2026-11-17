@@ -1,0 +1,35 @@
+{
+  "name": "ploc",
+  "kind": "synth",
+  "order": 0,
+  "loadable": true,
+  "symbol": "ENGINE_ploc",
+  "sources": [
+    "ploc.c",
+    "screen.c",
+    "screen_legacy.c",
+    "controls.c"
+  ],
+  "defaults": [
+    16384,
+    12000,
+    5000,
+    0
+  ],
+  "page2_defaults": [
+    25923,
+    13604,
+    774
+  ],
+  "claims": [],
+  "screen": {
+    "svg": "ploc.svg",
+    "symbol": "SCREEN_ploc"
+  },
+  "author": "Nicolas Franck Pauly",
+  "version": "0.7.0-rc1",
+  "engine_input": true,
+  "cflags": [
+    "-DPLOC_STANDALONE"
+  ]
+}

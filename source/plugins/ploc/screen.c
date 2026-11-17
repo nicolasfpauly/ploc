@@ -96,8 +96,14 @@ static void update(void *screen,int dt){
   last_active=-2;display_mode=modern;
  }
  if(!modern){op1_eng_page[2]=op1_eng_page[3]=0;SCREEN_ploc_legacy.update(screen,dt);return;}
+#ifdef PLOC_STANDALONE
+ /* No companion handshake: an older installed PLOCCTRL must stay idle. */
+ op1_eng_page[2]=0;
+ if(!p5_shift_held())op1_eng_page[0]=0;
+#else
  int order=raw[4]-OP1_ENGINE_MAGIC;
  op1_eng_page[2]=order>=1&&order<=OP1_MAX_ORDER?(uint8_t)(PLOC6_TOKEN|order):0;
+#endif
  int active=p5_shift_held()&&(op1_eng_page[0]&0x80)?op1_eng_page[0]&3:-1;
  if(active==0)active=-1;
  int16_t live[4];sq_synth_knobs_live(OP1_SCREEN_SLOT,live);
